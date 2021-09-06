@@ -1,10 +1,18 @@
 # OSX
 #
+<<<<<<< HEAD
 recetario/.DS_Store
 
 # Xcode
 #
 recetario/build/
+=======
+.DS_Store
+
+# Xcode
+#
+build/
+>>>>>>> eeb6ab468f7665ff5d2eadb039da322749ab65d6
 *.pbxuser
 !default.pbxuser
 *.mode1v3
@@ -13,6 +21,7 @@ recetario/build/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+<<<<<<< HEAD
 recetario/xcuserdata
 *.xccheckout
 *.moved-aside
@@ -28,17 +37,43 @@ recetario/build/
 recetario/.idea
 recetario/.gradle
 recetario/local.properties
+=======
+xcuserdata
+*.xccheckout
+*.moved-aside
+DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+project.xcworkspace
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+>>>>>>> eeb6ab468f7665ff5d2eadb039da322749ab65d6
 *.iml
 *.hprof
 
 # node.js
 #
+<<<<<<< HEAD
 recetario/node_modules/
 recetario/npm-debug.log
 recetario/yarn-error.log
 
 # BUCK
 recetario/buck-out/
+=======
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# BUCK
+buck-out/
+>>>>>>> eeb6ab468f7665ff5d2eadb039da322749ab65d6
 \.buckd/
 *.keystore
 !debug.keystore
@@ -47,8 +82,16 @@ recetario/buck-out/
 *.jsbundle
 
 # CocoaPods
+<<<<<<< HEAD
 recetario//ios/Pods/
 
 # Expo
 recetario/.expo/
 recetario/web-build/
+=======
+/ios/Pods/
+
+# Expo
+.expo/
+web-build/
+>>>>>>> eeb6ab468f7665ff5d2eadb039da322749ab65d6
