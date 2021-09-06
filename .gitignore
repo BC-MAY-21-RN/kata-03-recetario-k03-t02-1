@@ -1,0 +1,54 @@
+# OSX
+#
+recetario/.DS_Store
+
+# Xcode
+#
+recetario/build/
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+recetario/xcuserdata
+*.xccheckout
+*.moved-aside
+recetario/DerivedData
+*.hmap
+*.ipa
+*.xcuserstate
+recetario/project.xcworkspace
+
+# Android/IntelliJ
+#
+recetario/build/
+recetario/.idea
+recetario/.gradle
+recetario/local.properties
+*.iml
+*.hprof
+
+# node.js
+#
+recetario/node_modules/
+recetario/npm-debug.log
+recetario/yarn-error.log
+
+# BUCK
+recetario/buck-out/
+\.buckd/
+*.keystore
+!debug.keystore
+
+# Bundle artifacts
+*.jsbundle
+
+# CocoaPods
+recetario//ios/Pods/
+
+# Expo
+recetario/.expo/
+recetario/web-build/
