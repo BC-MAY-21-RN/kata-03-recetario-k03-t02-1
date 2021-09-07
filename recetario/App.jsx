@@ -1,20 +1,11 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { View } from 'react-native';
 
-import Recetario from './views';
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+import Recetario from './components/views';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View>
       <Recetario />
     </View>
   );
