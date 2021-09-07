@@ -1,0 +1,246 @@
+{
+    "1": {
+        "uri": "https://b.zmtcdn.com/data/dish_photos/a94/44647919c16a80ac52b733bf5874da94.jpg",
+        "name": "Peperoni Pizza Pockets",
+        "ingredients": [
+            {
+                "name": "puff pastry",
+                "quantity": "1 sheet"
+            },
+            {
+                "name": "pepperoni",
+                "quantity": "15 slices"
+            },
+            {
+                "name": "marinara sauce",
+                "quantity": "1 cup (65g)"
+            },
+            {
+                "name": "shredded mozzarella cheese",
+                "quantity": "½ cup  (50 g)"
+            },
+            {
+                "name": "eggs",
+                "quantity": "1 egg, for egg wash"
+            }
+        ]
+    },
+    "2": {
+        "uri": "https://images-gmi-pmc.edge-generalmills.com/9fff58cc-3254-480d-9f62-56efdd4a5e92.jpg",
+        "name": "Pancake Cups",
+        "ingredients": [
+            {
+                "name": "flour",
+                "quantity": "½ cup (60 g)"
+            },
+            {
+                "name": "milk",
+                "quantity": "½ cup (120 mL)"
+            },
+            {
+                "name": "eggs",
+                "quantity": "3"
+            },
+            {
+                "name": "tablespoons butter, melted",
+                "quantity": "2"
+            },
+            {
+                "name": "teaspoon vanilla",
+                "quantity": "½"
+            },
+            {
+                "name": "topping of your choice",
+                "quantity": ""
+            }
+        ]
+    },
+    "3": {
+        "uri": "https://www.vitamix.com/media/other/images/Corn-Soup.jpg",
+        "name": "Corn Soup",
+        "ingredients": [
+            {
+                "name": "onion, chopped",
+                "quantity": "½"
+            },
+            {
+                "name": "clove garlic, minced",
+                "quantity": "1"
+            },
+            {
+                "name": "chopped fresh parley",
+                "quantity": "¼ cup"
+            },
+            {
+                "name": "margarine",
+                "quantity": "1 tablespoon"
+            },
+            {
+                "name": "all-purpose flour",
+                "quantity": "3 tablespoon"
+            },
+            {
+                "name": "milk",
+                "quantity": "2 ½ cups"
+            },
+            {
+                "name": "chicken broth",
+                "quantity": "1 cup"
+            },
+            {
+                "name": "cans whole kernel corn",
+                "quantity": "2 (12 ounce)"
+            },
+            {
+                "name": "cream cheese",
+                "quantity": "2 ½ tablespoons"
+            },
+            {
+                "name": "garlic salt",
+                "quantity": "1 tablespoons"
+            },
+            {
+                "name": "ground black pepper",
+                "quantity": "1 tablespoons"
+            },
+            {
+                "name": "ground cayenne pepper to taste",
+                "quantity": "1 tablespoons"
+            }
+        ]
+    },
+    "4": {
+        "uri": "https://abangares.com/los-mangos/assets/images/plato-002-los-mangos-592x395.jpg",
+        "name": "Abanares Wings",
+        "ingredients": [
+            {
+                "name": "wings",
+                "quantity": "23 ml"
+            },
+            {
+                "name": "heat in the oven ",
+                "quantity": "60 degrees for 5 minutes "
+            }
+        ]
+    },
+    "5": {
+        "uri": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8708_C2640C49B_RMS-2.jpg?fit=700,1024",
+        "name": "Strawberry Ice Cream",
+        "ingredients": [
+            {
+                "name": "milk",
+                "quantity": "2 cups"
+            },
+            {
+                "name": "heavy cream",
+                "quantity": "2 cups"
+            },
+            {
+                "name": "sugar",
+                "quantity": "1 cups"
+            },
+            {
+                "name": "teaspoon salt",
+                "quantity": "¼"
+            },
+            {
+                "name": "teaspoons vanilla extract",
+                "quantity": "2"
+            },
+            {
+                "name": "mashed fresh strawberries",
+                "quantity": "2 cups"
+            },
+            {
+                "name": " red food coloring (optional)",
+                "quantity": "2 drops"
+            }
+        ]
+    },
+    "6": {
+        "uri": "https://www.cocinavital.mx/wp-content/uploads/2018/03/margarita_tradicional-e1582054510330.jpg",
+        "name": "Margarita",
+        "ingredients": [
+            {
+                "name": "tequila blanco o reposado",
+                "quantity": "60 ml"
+            },
+            {
+                "name": "triple seco o de licor de naranja",
+                "quantity": "40 ml"
+            },
+            {
+                "name": "zumo de lima",
+                "quantity": "60 ml"
+            },
+            {
+                "name": "Sal y sirope de azúcar (para adornar la copa en su superficie)",
+                "quantity": ""
+            },
+            {
+                "name": "Copa de boca ancha para cóctel Margarita",
+                "quantity": ""
+            },
+            {
+                "name": "Hielo",
+                "quantity": ""
+            }
+        ]
+    },
+    "7": {
+        "uri": "https://img.vixdata.io/pd/webp-large/es/sites/default/files/g/ginebra_con_frutos_rojos_receta.jpg",
+        "name": "Gin and Red Fruits Cocktail",
+        "ingredients": [
+            {
+                "name": "gin",
+                "quantity": "50 ml"
+            },
+            {
+                "name": "tonic soda",
+                "quantity": "200 ml"
+            },
+            {
+                "name": "Lemon juice",
+                "quantity": "4 tablespoons"
+            },
+            {
+                "name": "Red fruits juice",
+                "quantity": ""
+            },
+            {
+                "name": "Red fruits (a berry, a blackberry, a raspberry)",
+                "quantity": ""
+            },
+            {
+                "name": "A slice of lemon",
+                "quantity": ""
+            }
+        ]
+    },
+    "8": {
+        "uri": "https://www.julieseatsandtreats.com/wp-content/uploads/2012/09/Easy-Meatball-Sub-Casserole-1024x682.jpg",
+        "name": "Meatball Sub Bake",
+        "ingredients": [
+            {
+                "name": "refrigerated biscuit",
+                "quantity": "1 tube"
+            },
+            {
+                "name": "chopped parsley",
+                "quantity": "2 tablespoons"
+            },
+            {
+                "name": "olive iol",
+                "quantity": "1 tablespoon"
+            },
+            {
+                "name": "butter, metled",
+                "quantity": "4 tablespoons"
+            },
+            {
+                "name": "minced",
+                "quantity": "4 cloves garlic"
+            }
+        ]
+    }
+}
