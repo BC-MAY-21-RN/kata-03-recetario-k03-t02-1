@@ -26,7 +26,7 @@ const HorizontalListImages = () => {
 
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView horizontal>
         <Image source={logo} />
         <Image source={logo} />
         <Image source={logo} />

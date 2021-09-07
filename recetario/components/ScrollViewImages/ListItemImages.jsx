@@ -1,14 +1,15 @@
 /* eslint-disable object-curly-newline */
 /* eslint-disable arrow-body-style */
 import React from 'react';
-import { View, ScrollView, Image } from 'react-native';
+import { View, ScrollView, Image, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'red',
+    backgroundColor: 'blue',
     flexDirection: 'row',
     display: 'flex',
     height: 220,
+    marginTop: 20,
   },
   scrollview: {
     display: 'flex',
@@ -26,7 +27,7 @@ const logo = {
 const ListItemImages = () => {
   return (
     <View style={styles.container}>
-      <ScrollView>
+      <ScrollView horizontal>
         <Image source={logo} />
         <Image source={logo} />
         <Image source={logo} />
