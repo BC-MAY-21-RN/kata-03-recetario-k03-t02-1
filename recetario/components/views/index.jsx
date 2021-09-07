@@ -28,6 +28,7 @@ const index = () => {
         <HorizontalListImages />
       </View>
       <View>
+        <Text>RECENT</Text>
         <ListItemImages />
       </View>
     </View>
