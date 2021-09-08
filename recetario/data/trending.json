@@ -1,6 +1,6 @@
-{
-    "1": {
-        "uri": "https://b.zmtcdn.com/data/dish_photos/a94/44647919c16a80ac52b733bf5874da94.jpg",
+[ 
+    {   "id": 1,
+        "url": "https://b.zmtcdn.com/data/dish_photos/a94/44647919c16a80ac52b733bf5874da94.jpg",
         "name": "Peperoni Pizza Pockets",
         "ingredients": [
             {
@@ -25,8 +25,8 @@
             }
         ]
     },
-    "2": {
-        "uri": "https://images-gmi-pmc.edge-generalmills.com/9fff58cc-3254-480d-9f62-56efdd4a5e92.jpg",
+    {   "id": 2, 
+        "url": "https://images-gmi-pmc.edge-generalmills.com/9fff58cc-3254-480d-9f62-56efdd4a5e92.jpg",
         "name": "Pancake Cups",
         "ingredients": [
             {
@@ -55,8 +55,8 @@
             }
         ]
     },
-    "3": {
-        "uri": "https://www.vitamix.com/media/other/images/Corn-Soup.jpg",
+     {  "id": 3,
+        "url": "https://www.vitamix.com/media/other/images/Corn-Soup.jpg",
         "name": "Corn Soup",
         "ingredients": [
             {
@@ -109,8 +109,8 @@
             }
         ]
     },
-    "4": {
-        "uri": "https://abangares.com/los-mangos/assets/images/plato-002-los-mangos-592x395.jpg",
+    {   "id": 4,
+        "url": "https://abangares.com/los-mangos/assets/images/plato-002-los-mangos-592x395.jpg",
         "name": "Abanares Wings",
         "ingredients": [
             {
@@ -123,8 +123,8 @@
             }
         ]
     },
-    "5": {
-        "uri": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8708_C2640C49B_RMS-2.jpg?fit=700,1024",
+    {   "id": 5,
+        "url": "https://www.tasteofhome.com/wp-content/uploads/2018/01/exps8708_C2640C49B_RMS-2.jpg?fit=700,1024",
         "name": "Strawberry Ice Cream",
         "ingredients": [
             {
@@ -157,8 +157,8 @@
             }
         ]
     },
-    "6": {
-        "uri": "https://www.cocinavital.mx/wp-content/uploads/2018/03/margarita_tradicional-e1582054510330.jpg",
+    {   "id": 6,
+        "url": "https://www.cocinavital.mx/wp-content/uploads/2018/03/margarita_tradicional-e1582054510330.jpg",
         "name": "Margarita",
         "ingredients": [
             {
@@ -187,8 +187,8 @@
             }
         ]
     },
-    "7": {
-        "uri": "https://img.vixdata.io/pd/webp-large/es/sites/default/files/g/ginebra_con_frutos_rojos_receta.jpg",
+     {  "id": 7,
+        "url": "https://img.vixdata.io/pd/webp-large/es/sites/default/files/g/ginebra_con_frutos_rojos_receta.jpg",
         "name": "Gin and Red Fruits Cocktail",
         "ingredients": [
             {
@@ -217,8 +217,8 @@
             }
         ]
     },
-    "8": {
-        "uri": "https://www.julieseatsandtreats.com/wp-content/uploads/2012/09/Easy-Meatball-Sub-Casserole-1024x682.jpg",
+    {   "id": 8,
+        "url": "https://www.julieseatsandtreats.com/wp-content/uploads/2012/09/Easy-Meatball-Sub-Casserole-1024x682.jpg",
         "name": "Meatball Sub Bake",
         "ingredients": [
             {
@@ -243,4 +243,4 @@
             }
         ]
     }
-}
+]

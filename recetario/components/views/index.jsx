@@ -3,7 +3,6 @@ import React from 'react';
 import { View, StyleSheet, Text } from 'react-native';
 import SearchBar from '../Search/SearchBar';
 import HorizontalListImages from '../ScrollViewImages/horizontalListImages';
-import ListItemImages from '../ScrollViewImages/ListItemImages';
 
 const styles = StyleSheet.create({
   container: {
@@ -11,11 +10,20 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     flexDirection: 'column',
   },
+  labelText: {
+    color: '#d31a69',
+    marginLeft: 5,
+  },
   boxSearch: {
     alignItems: 'center',
     marginTop: 60,
   },
+  boxSection: {
+    marginTop: 20,
+  },
 });
+const design = true;
+const reverseDataJson = true;
 
 const index = () => {
   return (
@@ -23,13 +31,13 @@ const index = () => {
       <View style={styles.boxSearch}>
         <SearchBar />
       </View>
-      <View>
-        <Text>TRENDING</Text>
-        <HorizontalListImages />
+      <View style={styles.boxSection}>
+        <Text style={styles.labelText}>TRENDING</Text>
+        <HorizontalListImages designStyles={design} reverseData={false} />
       </View>
-      <View>
-        <Text>RECENT</Text>
-        <ListItemImages />
+      <View style={styles.boxSection}>
+        <Text style={styles.labelText}>RECENT</Text>
+        <HorizontalListImages designStyles={false} reverseData={reverseDataJson} />
       </View>
     </View>
   );
