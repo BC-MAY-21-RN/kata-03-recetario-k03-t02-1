@@ -7,7 +7,7 @@ import HorizontalListImages from '../ScrollViewImages/horizontalListImages';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(52, 52, 52, 0.8)',
     flexDirection: 'column',
   },
   labelText: {
@@ -27,17 +27,19 @@ const reverseDataJson = true;
 
 const index = () => {
   return (
-    <View styles={styles.container}>
-      <View style={styles.boxSearch}>
-        <SearchBar />
-      </View>
-      <View style={styles.boxSection}>
-        <Text style={styles.labelText}>TRENDING</Text>
-        <HorizontalListImages designStyles={design} reverseData={false} />
-      </View>
-      <View style={styles.boxSection}>
-        <Text style={styles.labelText}>RECENT</Text>
-        <HorizontalListImages designStyles={false} reverseData={reverseDataJson} />
+    <View style={{ backgroundColor: '#272727' }}>
+      <View styles={styles.container}>
+        <View style={styles.boxSearch}>
+          <SearchBar />
+        </View>
+        <View style={styles.boxSection}>
+          <Text style={styles.labelText}>TRENDING</Text>
+          <HorizontalListImages designStyles={design} reverseData={false} />
+        </View>
+        <View style={styles.boxSection}>
+          <Text style={styles.labelText}>RECENT</Text>
+          <HorizontalListImages designStyles={false} reverseData={reverseDataJson} />
+        </View>
       </View>
     </View>
   );
