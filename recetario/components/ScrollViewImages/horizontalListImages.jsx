@@ -45,11 +45,11 @@ const HorizontalListImages = ({ designStyles, reverseData }) => {
     },
   });
   const [dataJson] = useState(dataTrending);
-  const resultDataJeson = reverseData ? dataJson.reverse() : dataJson;
+  const resultDataJson = reverseData ? dataJson.reverse() : dataJson;
   return (
     <View style={designStyles ? styles.container : styles.containerRecent}>
       <ScrollView horizontal>
-        {resultDataJeson?.map((value) => {
+        {resultDataJson?.map((value) => {
           return (
             <View key={value.id}>
               <Image 
