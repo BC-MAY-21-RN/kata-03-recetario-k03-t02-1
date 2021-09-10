@@ -58,7 +58,7 @@ const HorizontalListImages = ({ designStyles, reverseData, nameSection, navigati
               <TouchableOpacity onPress={() => {
                 navigation.navigate('RecipeDetail', {
                   name: value.name,
-                  nameSection,
+                  nameSection: nameSection,
                   url: value.url,
                   detail: value.ingredients,
                 });

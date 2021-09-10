@@ -1,7 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ImageBackground } from 'react-native';
+import { View, Text, StyleSheet, ImageBackground, FlatList } from 'react-native';
+
 
 const styles = StyleSheet.create({
   container: {
@@ -56,6 +57,12 @@ const RecipeDetail = ({ route, navigation }) => {
             <Text style={styles.labelText}>{name}</Text>
           </View>
         </ImageBackground>
+      </View>
+      <View>
+        <FlatList
+          data={detailRecipe}
+          renderItem={({item}) => <Text style={styles.labelText}>{item.quantity}</Text>}
+        />
       </View>
     </View>
   );
