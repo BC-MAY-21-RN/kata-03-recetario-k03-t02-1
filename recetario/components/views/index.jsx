@@ -1,5 +1,6 @@
 /* eslint-disable arrow-body-style */
 import React from 'react';
+
 import { View, StyleSheet, Text } from 'react-native';
 import SearchBar from '../Search/SearchBar';
 import HorizontalListImages from '../ScrollViewImages/horizontalListImages';
@@ -7,7 +8,6 @@ import HorizontalListImages from '../ScrollViewImages/horizontalListImages';
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgba(52, 52, 52, 0.8)',
     flexDirection: 'column',
   },
   labelText: {
@@ -25,7 +25,10 @@ const styles = StyleSheet.create({
 const design = true;
 const reverseDataJson = true;
 
-const index = () => {
+const index = ({ navigation }) => {
+  const onPress = () => {
+    navigation.navigate('RecipeDetail');
+  };
   return (
     <View style={{ backgroundColor: '#272727' }}>
       <View styles={styles.container}>
@@ -34,11 +37,15 @@ const index = () => {
         </View>
         <View style={styles.boxSection}>
           <Text style={styles.labelText}>TRENDING</Text>
-          <HorizontalListImages designStyles={design} reverseData={false} />
+          <HorizontalListImages designStyles={design} reverseData={false} action={onPress} />
         </View>
         <View style={styles.boxSection}>
           <Text style={styles.labelText}>RECENT</Text>
-          <HorizontalListImages designStyles={false} reverseData={reverseDataJson} />
+          <HorizontalListImages
+            designStyles={false}
+            reverseData={reverseDataJson}
+            action={onPress}
+          />
         </View>
       </View>
     </View>

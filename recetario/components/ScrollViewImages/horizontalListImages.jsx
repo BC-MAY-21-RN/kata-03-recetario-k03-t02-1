@@ -1,14 +1,17 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-closing-bracket-location */
 /* eslint-disable no-trailing-spaces */
 /* eslint-disable object-curly-newline */
 /* eslint-disable arrow-body-style */
 
-import React, { useState } from 'react';
-import { View, ScrollView, Image, Text, StyleSheet } from 'react-native';
+import * as React from 'react';
+import { useState } from 'react';
+import { TouchableOpacity, View, ScrollView, Image, Text, StyleSheet } from 'react-native';
+
 import dataTrending from '../../data/trending.json';
 
-const HorizontalListImages = ({ designStyles, reverseData }) => {
+const HorizontalListImages = ({ designStyles, reverseData, action }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'row',
@@ -52,10 +55,12 @@ const HorizontalListImages = ({ designStyles, reverseData }) => {
         {resultDataJson?.map((value) => {
           return (
             <View key={value.id}>
-              <Image 
-                style={designStyles ? styles.images : styles.recentImage} 
-                source={{ uri: value.url }} />
-              <Text style={styles.title}>{ value.name }</Text>
+              <TouchableOpacity onPress={action}>
+                <Image
+                  style={designStyles ? styles.images : styles.recentImage} 
+                  source={{ uri: value.url }} />
+                <Text style={styles.title}>{ value.name }</Text>
+              </TouchableOpacity>
             </View>
           );
         })}

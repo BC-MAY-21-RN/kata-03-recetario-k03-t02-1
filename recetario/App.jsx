@@ -4,19 +4,17 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Recetario from './components/views';
-import RecipeDetails from './components/views/detailFood';
+import Recipe from './components/views';
+import RecipeDetail from './components/views/recipeDetail';
 
 const Stack = createNativeStackNavigator();
 
 function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Recetario" component={Recetario} options={{ header: () => null }} />
-      </Stack.Navigator>
-      <Stack.Navigator>
-        <Stack.Screen name="RecipeDetail" component={RecipeDetails} options={{ header: () => null }} />
+      <Stack.Navigator initialRouteName="Recipe">
+        <Stack.Screen name="Recipe" component={Recipe} options={{ header: () => null }} />
+        <Stack.Screen name="RecipeDetail" component={RecipeDetail} options={{ header: () => null }} />
       </Stack.Navigator>
     </NavigationContainer>
   );
