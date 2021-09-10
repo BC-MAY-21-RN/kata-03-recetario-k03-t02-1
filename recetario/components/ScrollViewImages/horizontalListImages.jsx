@@ -11,7 +11,7 @@ import { TouchableOpacity, View, ScrollView, Image, Text, StyleSheet } from 'rea
 
 import dataTrending from '../../data/trending.json';
 
-const HorizontalListImages = ({ designStyles, reverseData, action }) => {
+const HorizontalListImages = ({ designStyles, reverseData, nameSection, navigation }) => {
   const styles = StyleSheet.create({
     container: {
       flexDirection: 'row',
@@ -55,7 +55,14 @@ const HorizontalListImages = ({ designStyles, reverseData, action }) => {
         {resultDataJson?.map((value) => {
           return (
             <View key={value.id}>
-              <TouchableOpacity onPress={action}>
+              <TouchableOpacity onPress={() => {
+                navigation.navigate('RecipeDetail', {
+                  name: value.name,
+                  nameSection,
+                  url: value.url,
+                  detail: value.ingredients,
+                });
+              }}>
                 <Image
                   style={designStyles ? styles.images : styles.recentImage} 
                   source={{ uri: value.url }} />

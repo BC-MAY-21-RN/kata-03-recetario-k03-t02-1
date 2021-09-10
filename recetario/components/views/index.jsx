@@ -26,9 +26,6 @@ const design = true;
 const reverseDataJson = true;
 
 const index = ({ navigation }) => {
-  const onPress = () => {
-    navigation.navigate('RecipeDetail');
-  };
   return (
     <View style={{ backgroundColor: '#272727' }}>
       <View styles={styles.container}>
@@ -37,14 +34,15 @@ const index = ({ navigation }) => {
         </View>
         <View style={styles.boxSection}>
           <Text style={styles.labelText}>TRENDING</Text>
-          <HorizontalListImages designStyles={design} reverseData={false} action={onPress} />
+          <HorizontalListImages designStyles={design} reverseData={false} navigation={navigation} nameSection="TRENDING" />
         </View>
         <View style={styles.boxSection}>
           <Text style={styles.labelText}>RECENT</Text>
           <HorizontalListImages
             designStyles={false}
             reverseData={reverseDataJson}
-            action={onPress}
+            navigation={navigation}
+            nameSection="RECENT"
           />
         </View>
       </View>
