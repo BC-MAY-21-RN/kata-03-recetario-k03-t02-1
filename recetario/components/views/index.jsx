@@ -11,15 +11,25 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   labelText: {
+    fontSize: 25,
     color: '#d31a69',
     marginLeft: 5,
   },
   boxSearch: {
     alignItems: 'center',
-    marginTop: 60,
+    justifyContent: 'flex-end',
+    height: 95,
   },
-  boxSection: {
-    marginTop: 20,
+  sectionTrending: {
+    marginTop: 15,
+    flexDirection: 'column',
+    height: 260,
+  },
+  sectionRecent: {
+    justifyContent: 'flex-end',
+    flexDirection: 'column',
+    height: 390,
+
   },
 });
 const design = true;
@@ -27,16 +37,16 @@ const reverseDataJson = true;
 
 const index = ({ navigation }) => {
   return (
-    <View style={{ backgroundColor: '#272727' }}>
+    <View style={{ backgroundColor: '#272727', height: '100%' }}>
       <View styles={styles.container}>
         <View style={styles.boxSearch}>
           <SearchBar />
         </View>
-        <View style={styles.boxSection}>
+        <View style={styles.sectionTrending}>
           <Text style={styles.labelText}>TRENDING</Text>
           <HorizontalListImages designStyles={design} reverseData={false} navigation={navigation} nameSection="TRENDING" />
         </View>
-        <View style={styles.boxSection}>
+        <View style={styles.sectionRecent}>
           <Text style={styles.labelText}>RECENT</Text>
           <HorizontalListImages
             designStyles={false}

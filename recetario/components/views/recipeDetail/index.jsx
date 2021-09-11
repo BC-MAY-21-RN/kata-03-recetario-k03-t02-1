@@ -1,8 +1,11 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, ImageBackground, FlatList } from 'react-native';
 
+
+import {
+  View, Text, StyleSheet, ImageBackground, FlatList,
+} from 'react-native';
 
 const styles = StyleSheet.create({
   container: {
@@ -22,30 +25,40 @@ const styles = StyleSheet.create({
   imageSection: {
     flex: 1,
     flexDirection: 'column',
-    backgroundColor: 'blue',
     justifyContent: 'flex-start',
     width: '100%',
     height: '100%',
   },
   colTitleSection: {
     flex: 1,
+    backgroundColor: 'rgba(66, 73, 73,0.7)',
     flexDirection: 'column',
     justifyContent: 'flex-end',
     padding: 30,
   },
   labelText: {
     color: '#fff',
-    fontSize: 40,
+    fontSize: 30,
     marginLeft: 5,
   },
   titleSection: {
-    fontSize: 30,
+    fontSize: 20,
+    marginLeft: 5,
+    color: '#fff',
+  },
+  boxTextIgredients: {
+    margin: 25,
+  },
+  titleIngredients: {
+    fontSize: 20,
     color: '#fff',
   },
 });
 
-const RecipeDetail = ({ route, navigation }) => {
-  const { name, nameSection, url, detail } = route.params;
+const RecipeDetail = ({ route }) => {
+  const {
+    name, nameSection, url, detail,
+  } = route.params;
   const [detailRecipe] = useState(detail);
 
   return (
@@ -58,10 +71,14 @@ const RecipeDetail = ({ route, navigation }) => {
           </View>
         </ImageBackground>
       </View>
+      <View style={styles.boxTextIgredients}>
+        <Text style={styles.titleIngredients}>Ingredients</Text>
+        <Text style={styles.titleIngredients}>for 3 servings</Text>
+      </View>
       <View>
         <FlatList
           data={detailRecipe}
-          renderItem={({item}) => <Text style={styles.labelText}>{item.quantity}</Text>}
+          renderItem={({ item }) => <Text style={styles.labelText}>{item.quantity}</Text>}
         />
       </View>
     </View>
