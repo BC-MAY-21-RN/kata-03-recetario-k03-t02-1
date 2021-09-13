@@ -1,10 +1,12 @@
+/* eslint-disable react/no-array-index-key */
+/* eslint-disable no-plusplus */
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
-
+import { DataTable } from 'react-native-paper';
 import {
-  FlatList, TouchableOpacity, View, Text, StyleSheet, ImageBackground,
+  TouchableOpacity, View, Text, StyleSheet, ImageBackground,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -53,6 +55,7 @@ const styles = StyleSheet.create({
   imageButtonAction: {
     fontSize: 32,
     flex: 1,
+    marginTop: 10,
     justifyContent: 'flex-end',
     flexDirection: 'row',
   },
@@ -64,6 +67,7 @@ const styles = StyleSheet.create({
   titleSection: {
     fontSize: 20,
     marginLeft: 5,
+    margin: 10,
     color: '#fff',
   },
   boxTextIgredients: {
@@ -75,6 +79,19 @@ const styles = StyleSheet.create({
   },
   icon: {
     backgroundColor: '#fff',
+  },
+  tableText: {
+    color: '#fff',
+    fontSize: 18,
+
+  },
+  tableRow: {
+    position: 'absolute',
+    backgroundColor: '#323233',
+    top: 45,
+    width: '100%',
+    height: 1,
+    margin: 5,
   },
 });
 
@@ -94,12 +111,12 @@ const RecipeDetail = ({ route, navigation }) => {
             <View style={styles.colButtonAction}>
               <View style={styles.imageButtonActionClose}>
                 <TouchableOpacity onPress={buttonClose}>
-                  <Icon name="close-outline" style={{ fontSize: 42, color: '#fff' }} />
+                  <Icon name="close-outline" style={{ fontSize: 43, color: '#fff' }} />
                 </TouchableOpacity>
               </View>
               <View style={styles.imageButtonAction}>
                 <Icon name="share-outline" style={{ fontSize: 32, color: '#fff', marginHorizontal: 20 }} />
-                <Icon name="heart-outline" style={{ fontSize: 32, color: '#fff' }} />
+                <Icon name="heart-outline" style={{ fontSize: 32, color: '#fff', marginTop: 2 }} />
               </View>
             </View>
             <View style={styles.colTitleSection}>
@@ -114,10 +131,23 @@ const RecipeDetail = ({ route, navigation }) => {
         <Text style={styles.titleIngredients}>for 3 servings</Text>
       </View>
       <View>
-        <FlatList
-          data={detailRecipe}
-          renderItem={({ item }) => <Text style={styles.labelText}>{item.quantity}</Text>}
-        />
+        <DataTable>
+          {
+          detailRecipe.map((value, index) => {
+            return (
+              <DataTable.Row key={index}>
+                <DataTable.Cell>
+                  <Text style={styles.tableText}>{value.name}</Text>
+                </DataTable.Cell>
+                <DataTable.Cell numeric>
+                  <Text style={styles.tableText}>{value.quantity}</Text>
+                </DataTable.Cell>
+                <View style={styles.tableRow} />
+              </DataTable.Row>
+            );
+          })
+         }
+        </DataTable>
       </View>
     </View>
   );
