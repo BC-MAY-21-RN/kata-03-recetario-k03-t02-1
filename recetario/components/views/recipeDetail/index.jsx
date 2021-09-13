@@ -19,7 +19,6 @@ const styles = StyleSheet.create({
   },
   containerImage: {
     flexDirection: 'column',
-    backgroundColor: 'blue',
     justifyContent: 'flex-end',
     width: '100%',
     height: '50%',
