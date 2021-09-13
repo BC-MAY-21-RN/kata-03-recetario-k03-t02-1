@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable arrow-body-style */
 import React, { useState } from 'react';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 
 import {
-  View, Text, StyleSheet, ImageBackground, FlatList,
+  FlatList, TouchableOpacity, View, Text, StyleSheet, ImageBackground,
 } from 'react-native';
 
 const styles = StyleSheet.create({
@@ -29,12 +29,32 @@ const styles = StyleSheet.create({
     width: '100%',
     height: '100%',
   },
-  colTitleSection: {
+  colSectionimage: {
     flex: 1,
     backgroundColor: 'rgba(66, 73, 73,0.7)',
     flexDirection: 'column',
-    justifyContent: 'flex-end',
     padding: 30,
+  },
+  colButtonAction: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+  },
+  colTitleSection: {
+    flex: 1,
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    padding: 1,
+  },
+  imageButtonActionClose: {
+    fontSize: 32,
+    flex: 1,
+  },
+  imageButtonAction: {
+    fontSize: 32,
+    flex: 1,
+    justifyContent: 'flex-end',
+    flexDirection: 'row',
   },
   labelText: {
     color: '#fff',
@@ -53,21 +73,39 @@ const styles = StyleSheet.create({
     fontSize: 20,
     color: '#fff',
   },
+  icon: {
+    backgroundColor: '#fff',
+  },
 });
 
-const RecipeDetail = ({ route }) => {
+const RecipeDetail = ({ route, navigation }) => {
   const {
     name, nameSection, url, detail,
   } = route.params;
+  const buttonClose = () => {
+    navigation.navigate('Recipe');
+  };
   const [detailRecipe] = useState(detail);
-
   return (
     <View style={styles.container}>
       <View style={styles.containerImage}>
         <ImageBackground source={{ uri: url }} style={styles.imageSection}>
-          <View style={styles.colTitleSection}>
-            <Text style={styles.titleSection}>{nameSection}</Text>
-            <Text style={styles.labelText}>{name}</Text>
+          <View style={styles.colSectionimage}>
+            <View style={styles.colButtonAction}>
+              <View style={styles.imageButtonActionClose}>
+                <TouchableOpacity onPress={buttonClose}>
+                  <Icon name="close-outline" style={{ fontSize: 42, color: '#fff' }} />
+                </TouchableOpacity>
+              </View>
+              <View style={styles.imageButtonAction}>
+                <Icon name="share-outline" style={{ fontSize: 32, color: '#fff', marginHorizontal: 20 }} />
+                <Icon name="heart-outline" style={{ fontSize: 32, color: '#fff' }} />
+              </View>
+            </View>
+            <View style={styles.colTitleSection}>
+              <Text style={styles.titleSection}>{nameSection}</Text>
+              <Text style={styles.labelText}>{name}</Text>
+            </View>
           </View>
         </ImageBackground>
       </View>

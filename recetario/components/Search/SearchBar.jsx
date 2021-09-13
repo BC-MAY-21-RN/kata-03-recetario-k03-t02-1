@@ -1,32 +1,55 @@
 import React, { useState } from 'react';
-import { TextInput, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
+import { TextInput, View, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
+  textInputContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
   input: {
     borderRadius: 9,
-    height: 38,
     backgroundColor: '#323233',
     borderColor: '#323233',
     color: '#fff',
+    height: 38,
     fontSize: 18,
     width: 360,
-    margin: 12,
-    borderWidth: 1,
-    padding: 7,
-
+  },
+  searchIcon: {
+    position: 'absolute',
+    fontSize: 25,
+    marginLeft: 10,
+    marginTop: 5,
+    color: '#fff',
+  },
+  microIcon: {
+    position: 'absolute',
+    left: 312,
+    top: -2,
+    fontSize: 30,
+    marginLeft: 10,
+    marginTop: 5,
+    color: '#fff',
   },
 });
 
 const SearchBar = () => {
   const [text, onChangeText] = useState('');
   return (
-    <TextInput
-      style={styles.input}
-      onChangeText={onChangeText}
-      value={text}
-      placeholderTextColor="#fff"
-      placeholder="What do you want to eat?"
-    />
+    <View style={styles.inputStyle}>
+      <TextInput
+        style={styles.input}
+        onChangeText={onChangeText}
+        value={text}
+        placeholderTextColor="#fff"
+        placeholder="         What do you want to eat?"
+      />
+      <Icon name="search-outline" style={styles.searchIcon} />
+      <Icon name="mic" style={styles.microIcon} />
+    </View>
   );
 };
 
