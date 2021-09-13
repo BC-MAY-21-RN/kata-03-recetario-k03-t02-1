@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 const SearchBar = () => {
   const [text, onChangeText] = useState('');
   return (
-    <View style={styles.inputStyle}>
+    <View>
       <TextInput
         style={styles.input}
         onChangeText={onChangeText}
